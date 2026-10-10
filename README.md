@@ -85,7 +85,7 @@
   <br/><br/>
   超级岛电量同步 · 融合设备中心 · 系统设置内降噪切换 · 5 组 EQ 预设 · 游戏低延迟，全部通过 Xposed Hook 小米蓝牙栈实现。
   <br/>
-  <code>Kotlin</code> <code>LSPosed</code> <code>HyperOS</code> <code>Reverse Engineering</code> · v1.3.0 · GPL-3.0 · 中 / 英 / 日 三语文档
+  <code>Kotlin</code> <code>LSPosed</code> <code>HyperOS</code> <code>Reverse Engineering</code> · v1.3.0 · GPL-3.0 
 </td>
 </tr>
 </table>
@@ -99,7 +99,7 @@
 
 | 🔓 安全研究 | 🍎 黑苹果 |
 | :---: | :---: |
-| **[oppofindN2-ghostlock](https://github.com/pubglite55/oppofindN2-ghostlock)**<br/>GhostLock (CVE-2026-43499) Linux 内核栈 UAF，x86_64 → ARM64 移植适配<br/>`C` `kernel-exploit` `UAF` `KASLR`<br/>⭐ 66 · MIT | **[ROG-GU603ZM-Hackintosh](https://github.com/pubglite55/ROG-GU603ZM-Hackintosh)**<br/>华硕 ROG 幻16 OpenCore EFI：Sequoia 15 + RTX 3060 Laptop 驱动<br/>`ASL` `OpenCore` `macOS` `SSDT`<br/>MIT · 中英双语 |
+| **[oppofindN2-ghostlock](https://github.com/pubglite55/oppofindN2-ghostlock)**<br/>GhostLock (CVE-2026-43499) Linux 内核栈 UAF，x86_64 → ARM64 移植适配<br/>`C` `kernel-exploit` `UAF` `KASLR`<br/>⭐ 66 · MIT | **[ROG-GU603ZM-Hackintosh](https://github.com/pubglite55/ROG-GU603ZM-Hackintosh)**<br/>华硕 ROG 幻16 OpenCore EFI：Sequoia 15 + RTX 3060 Laptop 驱动<br/>`ASL` `OpenCore` `macOS` `SSDT`<br/>MIT |
 | 📡 协议逆向 | 📱 App 开发 |
 | **[SpaceTravel-Protocol](https://github.com/pubglite55/SpaceTravel-Protocol)**<br/>水月雨 Space Travel TWS 蓝牙协议完整分析（GAIA V3 / BLE GATT）<br/>`JavaScript` `Bluetooth` `Frida` `reverse-engineering`<br/>MIT | **[ta_companion](https://github.com/pubglite55/ta_companion)**<br/>TA · AI 灵魂伴侣 App：Flutter + Riverpod，记忆 / 心情 / 朋友圈系统<br/>`Dart` `Flutter` `AI`<br/>MIT |
 
