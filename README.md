@@ -116,14 +116,6 @@
 
 ---
 
-## 📈 我在折腾什么
-
-<div align="center">
-  <a href="https://github.com/pubglite55"><img alt="activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=pubglite55&theme=tokyo-night&hide_border=true&bg_color=0d1117"></a>
-</div>
-
----
-
 ## 📬 找到我
 
 <div align="center">
