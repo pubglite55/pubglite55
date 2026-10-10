@@ -23,17 +23,12 @@
 
 ## 👋 关于我
 
-> 一个把业余时间都砸在「把设备拆到它会说话」上的折腾党。
->
-> <sub>自我介绍写的是「是一个傻傻的小白」—— 只是拆的东西通常会碰到底层一点。🙃</sub>
 
 主要折腾方向是 **系统底层与逆向**：从 Linux 内核 UAF 利用、Android 设备固件移植，到 TWS 耳机蓝牙协议抓包，再到把 macOS 塞进一台 ROG 游戏本。
-我相信一个东西只要能跑起来，就一定说明书没讲清楚的那部分才最有趣。
 
 - 🔭 现在在做：`GhostLock (CVE-2026-43499)` 在 OPPO Find N2 上的 ARM64 利用适配 —— CFI bypass 攻坚中
-- 🍎 副业：维护 ROG 幻16 GU603ZM 的 OpenCore EFI，让 RTX 3060 Laptop 在 macOS Sequoia 上真正亮起来
+- 🍎 副业：维护 ROG 幻16 GU603ZM 的 OpenCore EFI
 - 📡 兴趣：BLE / GAIA V3 协议逆向、Frida Hook、HyperOS 生态适配
-- 🤝 想一起玩：Android 内核安全、设备 bring-up、协议逆向方向的朋友都欢迎
 
 ---
 
@@ -68,22 +63,6 @@
   <img alt="streak" src="https://streak-stats.demolab.com?user=pubglite55&theme=tokyonight&hide_border=true">
 </div>
 
-<details>
-<summary>⚠️ 国内加载不出这些卡片？（点开）</summary>
-
-<br/>
-
-上面的统计卡片使用公共服务，偶尔会被墙或限流。任选一个替换即可：
-
-| 组件 | 主地址（推荐） | 备用地址 |
-| :--- | :--- | :--- |
-| 统计卡片 | `https://github-readme-stats.vercel.app/api?username=pubglite55...` | `https://vercel.leecheng.tech/api?username=pubglite55...` |
-| 语言分布 | `https://github-readme-stats.vercel.app/api/top-langs/...` | `https://vercel.leecheng.tech/api/top-langs/...` |
-| 连续提交 | `https://streak-stats.demolab.com?user=pubglite55...` | `https://streak-stats.vercel.app?user=pubglite55...` |
-
-改 `theme=` 参数可以换配色，可选：`tokyonight` · `dracula` · `gruvbox` · `radical` · `merko` · `dark`。
-
-</details>
 
 ---
 
@@ -132,7 +111,6 @@
 <br/>
 
 - **[ksymless_Android](https://github.com/pubglite55/ksymless_Android)** — Android 平台 ksymless
-- **[deb-to-ipa](https://github.com/pubglite55/deb-to-ipa)** — GitHub Actions 把 deb 转成 IPA
 
 </details>
 
@@ -154,8 +132,7 @@
 | :---: | :--- |
 | 🐙 **GitHub** | [@pubglite55](https://github.com/pubglite55) |
 | 🧑 **昵称** | xiuxiu391 |
-| 📍 **位置** | China 🇨🇳 |
-| 📧 **邮箱** | 在下面填一个（或从 GitHub 的 public email 读取） |
+| 📧 **邮箱** | 3418516663@qq.com |
 | 💬 **一起聊** | 欢迎开 Issue 或者直接 DM |
 
 </div>
