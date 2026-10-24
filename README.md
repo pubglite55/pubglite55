@@ -40,6 +40,23 @@ Linux 内核栈 UAF 从 x86_64 向 ARM64 移植适配，CFI bypass 攻坚中。
 
 ---
 
+## 数据
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats-dark.svg">
+  <img alt="GitHub 统计" src="assets/cards/stats-light.svg" width="430">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/top-langs-dark.svg">
+  <img alt="常用语言" src="assets/cards/top-langs-light.svg" width="350">
+</picture>
+
+</div>
+
+---
+
 ## 联系
 
 GitHub [@pubglite55](https://github.com/pubglite55) · 昵称 xiuxiu391 · 3418516663@qq.com

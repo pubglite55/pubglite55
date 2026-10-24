@@ -1,0 +1,75 @@
+name: cards
+
+# Renders the README cards into assets/cards/ inside this repository, so the profile page
+# loads them from GitHub itself instead of a third-party image service. The generator
+# (github-stats-extended) still does the rendering, but it runs here, in our own job, and
+# the result is a committed SVG.
+#
+# Both colour schemes are rendered: the README picks one with <picture> and
+# prefers-color-scheme, which is why every card exists twice.
+#
+# Colours come from assets/header-dark.svg: background #0f1a34 (the banner's mid stop),
+# cyan #22d3ee, blue #4f8cff. Keep them in step with the banner.
+
+on:
+  schedule:
+    - cron: "17 3 * * *"      # daily, off-peak
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: stats (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: "username=pubglite55&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=false&border_color=1e2b4d&bg_color=0f1a34&title_color=22d3ee&icon_color=4f8cff&text_color=c9d4ea"
+          path: assets/cards/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: stats (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: "username=pubglite55&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=false&border_color=d8e0f0&bg_color=ffffff&title_color=0e7490&icon_color=4f8cff&text_color=334155"
+          path: assets/cards/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: "username=pubglite55&layout=compact&langs_count=8&hide_border=false&border_color=1e2b4d&bg_color=0f1a34&title_color=22d3ee&text_color=c9d4ea"
+          path: assets/cards/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: "username=pubglite55&layout=compact&langs_count=8&hide_border=false&border_color=d8e0f0&bg_color=ffffff&title_color=0e7490&text_color=334155"
+          path: assets/cards/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit the rendered cards
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards
+          if git diff --cached --quiet; then
+            echo "cards unchanged"
+            exit 0
+          fi
+          git commit -m "cards: re-render $(date -u +%Y-%m-%d)"
+          git push
