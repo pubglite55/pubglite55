@@ -33,7 +33,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: "username=pubglite55&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=false&border_color=1e2b4d&bg_color=0f1a34&title_color=22d3ee&icon_color=4f8cff&text_color=c9d4ea"
+          options: "username=pubglite55&show_icons=true&include_all_commits=true&rank_icon=github&hide_rank=true&hide=issues,prs&hide_border=false&border_color=1e2b4d&bg_color=0f1a34&title_color=22d3ee&icon_color=4f8cff&text_color=c9d4ea"
           path: assets/cards/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -41,7 +41,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: "username=pubglite55&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=false&border_color=d8e0f0&bg_color=ffffff&title_color=0e7490&icon_color=4f8cff&text_color=334155"
+          options: "username=pubglite55&show_icons=true&include_all_commits=true&rank_icon=github&hide_rank=true&hide=issues,prs&hide_border=false&border_color=d8e0f0&bg_color=ffffff&title_color=0e7490&icon_color=4f8cff&text_color=334155"
           path: assets/cards/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
