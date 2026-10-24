@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/pubglite55?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/pubglite55?label=Followers&style=for-the-badge&logo=github&color=1f6feb"></a>
-  <a href="https://github.com/pubglite55?tab=repositories"><img alt="Repos" src="https://img.shields.io/badge/Public%20Repos-7-22d3ee?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/pubglite55?tab=repositories"><img alt="Repos" src="https://img.shields.io/badge/Public%20Repos-13-22d3ee?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/pubglite55/oppofindN2-ghostlock"><img alt="Top Star" src="https://img.shields.io/github/stars/pubglite55/oppofindN2-ghostlock?label=CVE-2026-43499&style=for-the-badge&color=a78bfa"></a>
   <a href="https://www.github.com/pubglite55"><img alt="Location" src="https://img.shields.io/badge/China-CN-22c55e?style=for-the-badge&logo=mapbox&logoColor=white"></a>
 </p>
@@ -26,7 +26,8 @@
 
 主要折腾方向是 **系统底层与逆向**：从 Linux 内核 UAF 利用、Android 设备固件移植，到 TWS 耳机蓝牙协议抓包，再到把 macOS 塞进一台 ROG 游戏本。
 
-- 🔭 现在在做：`GhostLock (CVE-2026-43499)` 在 OPPO Find N2 上的 ARM64 利用适配 —— CFI bypass 攻坚中
+- 🍏 现在在做：**把 iOS 16 跑在小米 13 Pro 上**（UniXNU / 骁龙 8 Gen 2）—— XNU 内核已在真机跑到 BSD 初始化并挂载根文件系统，正在攻真实 iOS 根与 AMFI 封印
+- 🔓 并行：`GhostLock (CVE-2026-43499)` 在 OPPO Find N2 上的 ARM64 利用适配 —— CFI bypass
 - 🍎 副业：维护 ROG 幻16 GU603ZM 的 OpenCore EFI
 - 📡 兴趣：BLE / GAIA V3 协议逆向、Frida Hook、HyperOS 生态适配
 
@@ -44,6 +45,7 @@
 | :--- | :--- |
 | 💻 语言 | `C` · `Assembly` · `Python` · `Dart` · `Kotlin` · `Shell` · `ASL (ACPI)` |
 | 🔧 系统层 | Linux Kernel (2.6–6.x) · OpenCore / ACPI / SSDT · Android NDK · kernel heap & UAF |
+| 🍏 XNU 移植 | XNU kernel bring-up · UEFI (EDK II / Project Mu) · Apple Device Tree (ADT) · APFS · prelink |
 | 🔓 安全 | KASLR / CFI bypass · ROP · Frida · IDA Pro · sk_buff heap spray |
 | 📡 协议 | BLE GATT · RFCOMM · GAIA V3 · Magisk module 打包 |
 | 📱 应用 | Flutter · Riverpod · Dio · Hive |
@@ -67,6 +69,34 @@
 ---
 
 ## ⭐ 精选项目
+
+### 🍏 旗舰：把 iOS 跑在小米 13 Pro 上
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="140" valign="middle">
+  <a href="https://github.com/pubglite55/UniXNU-nuwa">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pubglite55/UniXNU-nuwa/main/assets/logo-dark.svg">
+      <img src="https://raw.githubusercontent.com/pubglite55/UniXNU-nuwa/main/assets/logo-light.svg" width="112" alt="UniXNU-nuwa">
+    </picture>
+  </a>
+</td>
+<td align="left" valign="middle">
+  <a href="https://github.com/pubglite55/UniXNU-nuwa"><b>🍏 iOS 16 on Xiaomi 13 Pro（nuwa / SM8550）</b></a>
+  <br/>
+  <sub>UniXNU 移植 —— 预链接 Apple 原厂 kext 的 XNU，跑在骁龙 8 Gen 2 上</sub>
+  <br/><br/>
+  ABL → UEFI（Mu-Silicium）→ DarwinBoot 交接 → XNU 完整启动：AMFI / IOKit / BSD init 均已实机通过，根文件系统两条路径都挂载成功（<code>rd=md0</code> ramdisk 与 <code>rootdev=</code> UFS 卷）。当前在攻真实 iOS 根与 AMFI 根封印。
+  <br/>
+  <code>C</code> <code>XNU</code> <code>UEFI</code> <code>ARM64</code> <code>APFS</code> <code>prelink</code>
+</td>
+</tr>
+</table>
+</div>
+
+<br/>
 
 ### 🎧 特别推荐
 
@@ -111,6 +141,7 @@
 <br/>
 
 - **[ksymless_Android](https://github.com/pubglite55/ksymless_Android)** — Android 平台 ksymless
+- **[nuwa-mainline](https://github.com/pubglite55/nuwa-mainline)** — 小米 13 Pro 的 Linux mainline 移植：kernel + Ubuntu GNOME rootfs，arm64 CI
 
 </details>
 
