@@ -10,7 +10,7 @@
 
 系统底层与逆向：Linux 内核 UAF 利用、Android 固件移植、TWS 蓝牙协议抓包，以及把 macOS 塞进一台 ROG 游戏本。
 
-`C` · `ARM64 Assembly` · `Python` · Linux Kernel · XNU · UEFI (EDK II) · OpenCore / ACPI · Frida · IDA
+`C` · `Rust` · `ARM64 Assembly` · `Python` · Linux Kernel · XNU · UEFI (EDK II) · OpenCore / ACPI · Frida · IDA
 
 ---
 
@@ -32,6 +32,7 @@ Linux 内核栈 UAF 从 x86_64 向 ARM64 移植适配，CFI bypass 攻坚中。
 
 ## 其他项目
 
+- **[skyward-for-nuwa](https://github.com/pubglite55/skyward-for-nuwa)** — 小米 13 Pro 的 Rust 原生 recovery：/data 解密挂载（HyperOS 4 · Android 17 实测，含锁屏凭据路径）、息屏 AOD 三样式、口袋防误触，推 tag 自动构建发版
 - **[ROG-GU603ZM-Hackintosh](https://github.com/pubglite55/ROG-GU603ZM-Hackintosh)** — 华硕 ROG 幻16 的 OpenCore EFI：macOS Sequoia 15 + RTX 3060 Laptop
 - **[motobuds-for-hyper](https://github.com/pubglite55/motobuds-for-hyper)** — 把 Moto Buds 接进 HyperOS 3：超级岛电量、融合设备中心、降噪切换
 - **[SpaceTravel-Protocol](https://github.com/pubglite55/SpaceTravel-Protocol)** — 水月雨 Space Travel TWS 的 GAIA V3 / BLE GATT 协议完整分析
